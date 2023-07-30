@@ -1,7 +1,7 @@
 /* ------------------------------------- */
 /* @zooduck/esm-barrel-file-utils v0.0.1 */
 /* ------------------------------------- */
-function ESMBarrelFileUtils(modules) {
+export default function ESMBarrelFileUtils(modules) {
   return {
     get getModule() {
       return `(target, property) => {
@@ -23,4 +23,3 @@ function ESMBarrelFileUtils(modules) {
     }
   };
 }
-export { ESMBarrelFileUtils };

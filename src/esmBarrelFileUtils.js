@@ -33,7 +33,7 @@
  *
  * const { quack, moo, roar } = await soundbytes.importAllModules()
  */
-function ESMBarrelFileUtils(modules) {
+export default function ESMBarrelFileUtils(modules) {
   return {
     /**
      * @readonly
@@ -68,5 +68,3 @@ function ESMBarrelFileUtils(modules) {
     }
   };
 }
-
-export { ESMBarrelFileUtils };
